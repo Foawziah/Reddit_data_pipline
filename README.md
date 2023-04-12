@@ -11,18 +11,26 @@ Installation and requirements
 
 To get started with this project, you will need to install Docker, MongoDB, PostgresDB, and vaderSentiment. Additionally, you will need to create a Reddit account and app, as well as a Slack bot. Once all requirements are met, you can build and run the project using docker-compose. To check the database on MongoDB, use the command "docker exec mongodb mongosh". Similarly, to check the table on PostgresDB, use the command "docker exec -it tahinipost psql -U postgres -h localhost -p 5432 -d reddit_db".
 
-Install Docker Install MongoDB Install PostgresDB Install vaderSentiment
-Create a Reddit account Create an app in reddit: www.reddit.com/prefs/apps Create a Slack Bot: https://api.slack.com/apps
+Install Docker
+Install MongoDB
+Install PostgresDB
+Install vaderSentiment
+Create a Reddit account
+Create an app in reddit: www.reddit.com/prefs/apps
+Create a Slack Bot: https://api.slack.com/apps
 
 
 Getting Started
-docker-compose build docker-compose up docker-compose down --> removing docker container
-Check database on mongodb: docker exec mongodb mongosh Check table on postgresdb: docker exec -it tahinipost psql -U postgres -h localhost -p 5432 -d reddit_db
+docker-compose build
+docker-compose up
+docker-compose down --> removing docker container
+Check database on mongodb: docker exec mongodb mongosh
+Check table on postgresdb: docker exec -it tahinipost psql -U postgres -h localhost -p 5432 -d reddit_db
 
 
 
 
-he folder structure for this project will consist of three main components: reddit_collector, etl_job, and slackbot. The reddit_collector folder will contain files such as config.py, Dockerfile, get_reddit.py, and requirements.txt. The etl_job folder will contain config.py, Dockerfile, etl.py, and requirements.txt. The slackbot folder will contain config.py, Dockerfile, requirements.txt, and slackbot.py. Lastly, there will be a docker-compose.yml file that will bring together all the necessary components for this project to run smoothly.
+The folder structure for this project will consist of three main components: reddit_collector, etl_job, and slackbot. The reddit_collector folder will contain files such as config.py, Dockerfile, get_reddit.py, and requirements.txt. The etl_job folder will contain config.py, Dockerfile, etl.py, and requirements.txt. The slackbot folder will contain config.py, Dockerfile, requirements.txt, and slackbot.py. Lastly, there will be a docker-compose.yml file that will bring together all the necessary components for this project to run smoothly.
 
 The folder structure should be:
 |__ reddit_collector
