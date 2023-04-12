@@ -1,0 +1,7 @@
+dnspython
+pymongo
+pandas 
+sqlalchemy
+vaderSentiment
+psycopg2
+

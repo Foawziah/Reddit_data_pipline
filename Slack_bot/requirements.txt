@@ -1,0 +1,8 @@
+requests
+dnspython
+pymongo
+SQLalchemy
+pandas 
+slackclient
+nest_asyncio
+psycopg2-binary
